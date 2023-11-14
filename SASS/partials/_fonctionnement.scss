@@ -1,0 +1,81 @@
+.fonctionnement {
+    padding: 20px 15px 30px 20px;
+    &-menu {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &-menu-button {
+        position: relative;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        box-shadow:2px 7px 14px -8px rgba(0,0,0,0.75);
+        padding: 10px;
+        transition: all 0.4s;
+        i {
+            margin: 15px;
+            font-size: 20px;
+            color: #7e7e7e;
+        }
+        p {
+            font-weight: bold;
+        }
+    }
+    &-menu-bouton:hover {
+        color: #9356DC;
+        
+    }
+}
+
+.fonctionnement-menu-button:hover {
+    box-shadow:2px 7px 14px -8px rgba(0,0,0,95.75);
+
+    i {
+        color: #9356DC;
+    }
+} 
+
+.position {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: -15px;
+    background-color: #9356DC;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+    width: 15px;
+    p {
+        position: absolute;
+    }
+}
+
+@media (min-width: 1024px){
+    .fonctionnement {
+        padding: 2% 13% 3%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .fonctionnement a {
+        width: 30%;
+    }
+    .fonctionnement-menu-button {
+        width: auto;
+        margin-right: 2%;
+        height: 72px;
+    }
+
+    .fonctionnement-menu {
+        flex-direction: row;
+        gap: 53px;
+        width: 100%;
+    }
+}

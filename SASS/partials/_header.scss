@@ -1,0 +1,26 @@
+.header-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 69px;
+    a {
+        padding: 10px;
+    }
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    a {
+        padding: 10px;
+    }
+    i {
+        color: #353535;
+        font-size: x-large;
+        position: absolute;
+        left: 20px;
+        top: 18px;
+    }
+}

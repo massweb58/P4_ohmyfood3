@@ -1,0 +1,34 @@
+@import "partials/header";
+@import "partials/location";
+@import "partials/fonctionnement";
+@import "partials/restaurants";
+@import "partials/footer"; 
+@import "partials/reservation";
+@import "partials/loader";
+@import "partials/menu";
+@import "partials/animations";
+
+
+
+/** Général **/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+ body {
+    margin: auto;
+    max-width: 1440px;
+ }
+.main-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.cards img {
+    object-fit: cover;
+}

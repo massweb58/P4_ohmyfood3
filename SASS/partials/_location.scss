@@ -1,0 +1,16 @@
+.location-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    
+}
+
+.location-style {
+    background-color: #EAEAEA;
+    box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.5);
+    color: #353535; 
+    padding: 0px 15px;       
+}

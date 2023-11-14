@@ -1,0 +1,103 @@
+.restaurant {
+    background-color: #f6f6f6;
+    padding: 10px 0px 50px 0px;
+    h1 {
+        margin-left: 25px;
+    }
+}
+
+.restaurant-cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 0px 0px 0px 20px;
+    a {
+        width: 100%;
+        display: contents;
+
+    }
+}
+
+.restaurant-cards-desktop {
+    width: 100%;
+}
+
+
+.cards {
+    width: 95%;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    height: max-content;
+    &-nouveau {
+        width: 60px;
+        font-size: 14px;
+        padding: 5px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        text-align: center;
+        border-radius: 2px;
+        color: #008766;
+        background-color: #99E2D0;
+        p {
+            padding: 5px 0px;
+            margin: 0;
+            font-weight: bold;
+        }
+    }
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    img {
+        width: 100%;
+        height: 231px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    &-location {
+        margin: 0px;
+        padding: 0px 10px 10px 10px;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    i {
+        width: 22px;
+        padding: 10px;
+    }
+    &-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px 0px 10px 10px;
+        h2 {
+            margin: 10px 0px 5px 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .restaurant {
+        padding: 2% 13%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        h1 {
+            margin: 5px 0px 25px;
+        }
+    }
+    .restaurant-cards {
+        flex-direction: row;
+        gap: 30px;
+        margin-left: 0;
+    }
+    .restaurant-cards-desktop {
+        display: flex;
+        gap: 95px;
+    }  
+}

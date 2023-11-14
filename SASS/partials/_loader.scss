@@ -1,0 +1,122 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 9999;
+  opacity: 1;
+  animation: fade-out 0.2s 3s forwards;
+}
+
+.loader-position {
+  position: relative;
+}
+
+.slider {
+  overflow: hidden;
+  background-color: white;
+  margin: 0 15px;
+  height: 60px;
+  width: 45px;
+  -webkit-border-radius: 0px 0px 30px 30px;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1), -15px -15px 30px #fff,
+              inset -5px -5px 10px rgba(0, 0, 255, 0.1),
+              inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.wineglass {    
+  width: 10px;
+  height: 40px;
+  color: white;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 255, 0.1);    
+  position: absolute;
+  left: 32px;
+}
+
+.winefoot {
+  width: 40px;
+  height: 3px;
+  color: white;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 255, 0.1);       
+  position: absolute;
+  top: 100px;
+  left: 16px
+}
+
+
+.slider::before {
+  content: "";
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #2697f3,
+              inset 0px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-animation: fill-in-out 3.5s ease-in-out infinite;;
+  animation: fill-in-out 3.5s ease-in-out infinite;
+  
+}
+
+.slider-0::before {
+  animation-delay: calc(-4.5s);  
+  overflow: hidden;
+}
+.slider-1::before {
+  animation-delay: calc(-3.5s);
+  overflow: hidden;
+}
+.slider-2::before {
+  animation-delay: calc(-2.5s);
+  overflow: hidden;
+}
+
+@keyframes fill-in-out {
+  0% {
+    transform: translateY(250px);
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(250px);
+    filter: hue-rotate(180deg);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.main-container {
+  opacity: 1;
+  transition: opacity 3s ease-in;
+}
+
+.loader.fade-out .main-container {
+  opacity: 0;
+  transition: all 3s ease-out;
+}
+
+
